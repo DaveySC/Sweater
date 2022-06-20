@@ -1,0 +1,214 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #222226;
+}
+
+.top-bar{
+    background-color: #333336;
+    height: 7vh;
+    padding: 0;
+    margin: 0;
+
+}
+
+.main-holder{
+    background-color: #222226;
+    margin-left: 40vh;
+    margin-right: 40vh;
+
+}
+
+.side-bar{
+    margin-top: 30px;
+    vertical-align: middle;
+    height: 87vh;
+    display: inline-block;
+    width: 20%;
+    background-color: #222226;
+
+}
+.content-bar{
+    margin-top: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #333336;
+    width: 78.6%;
+    height: 87vh;
+
+}
+
+.side-bar-elements{
+    font-size: 18px;
+    width: 100%;
+    color: #777777;
+    background-color: #222226;
+    border: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.side-bar-elements:hover{
+    background-color: #444446;
+    cursor: pointer;
+}
+
+.chat{
+    vertical-align: top;
+    width: 69.4%;
+    height: 87vh;
+
+    display: inline-block;
+}
+.contacts{
+    vertical-align: top;
+    width: 30%;
+    height: 87vh;
+    display: inline-block;
+    border-right: 1px solid black;
+    overflow: auto;
+}
+
+#info-contacts{
+    color:#777777;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+}
+.contact{
+    width: 100%;
+    border-bottom: 1px solid black;
+    height: 60px;
+    padding:0;
+}
+
+.contacts::-webkit-scrollbar{
+    width: 10px;
+    background-color: #f9f9fd;
+}
+.contacts::-webkit-scrollbar-thumb {
+    background-color: #28282A;
+}
+
+.contacts::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+
+.image-contact{
+    vertical-align: top;
+    display: inline-block;
+    height: 60px;
+    width: 30%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
+
+.name-contact{
+    vertical-align: top;
+    display: inline-block;
+    width: fit-content;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.image-image{
+    height: 50px;
+    width:  50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+}
+
+.chat{
+    width: 100px;
+
+}
+.container{
+    padding: 0;
+    margin-left: -4px;
+    height: 84vh;
+    width: 64.4vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    height: 24.6px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 3px;
+    color: #777777;
+    font-size: 22px;
+}
+
+
+.body{
+    flex: 1;
+    color: white;
+    background-color: #404044;
+    padding: 20px;
+    overflow: auto;
+}
+
+.body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #f9f9fd;
+}
+.body::-webkit-scrollbar-thumb {
+    background-color: #28282A;
+}
+
+.body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.message{
+    background-color: #1B1B1D;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user_message{
+    margin-left: auto;
+    background-color: white;
+    color:#1B1B1D;
+}
+
+.footer form{
+    display: flex;
+}
+
+form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left:5px ;
+    font-size: 16px;
+}
+
+
+form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #1B1B1D;
+    color: white;
+    cursor: pointer;
+
+}

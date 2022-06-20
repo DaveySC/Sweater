@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/message.css">
+</head>
+<body>
+
+<div class="main-holder">
+    <div class="top-bar">
+        <p style="color:white; font-size: 24px;  text-align: center; padding-top: 7px;">Socialism(the funniest social network in the world) </p>
+    </div>
+
+    <div class="side-bar">
+        <form>
+            <button class="side-bar-elements">
+                <a th:href="@{/profile}"> Профиль</a>
+            </button>
+            <button class="side-bar-elements">
+                <a th:href="@{/message}"> Сообщения</a>
+            </button>
+            <button class="side-bar-elements">
+                <a th:href="@{/news}"> Новости</a>
+            </button>
+        </form>
+    </div>
+
+    <div class="content-bar">
+        <div class="contacts">
+            <div id="info-contacts">
+                Contacts
+            </div>
+
+            <div class="contact">
+                <div class="image-contact">
+                    <img class="image-image" src="../static/icons/image-contact.png">
+                </div>
+                <div class="name-contact">
+                        MY NAME
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="chat">
+            <div class="container">
+                <div class="header">
+                    Chat
+                </div>
+                <div class="body">
+                    <p class="message">Hello</p>
+                    <p class="message user_message">Hi</p>
+
+                    <p class="message">Hello</p>
+                    <p class="message user_message">Hi</p>
+
+                    <p class="message">Hello</p>
+                    <p class="message user_message">Hi</p>
+
+                    <p class="message">Hello</p>
+                    <p class="message user_message">Hi</p>
+
+                    <p class="message">Hello</p>
+                    <p class="message user_message">Hi</p>
+
+                </div>
+                <div class="footer">
+                    <form>
+                        <input type="text" size="40">
+                        <button>send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+</html>

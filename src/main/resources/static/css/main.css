@@ -1,0 +1,61 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #222226;
+}
+
+.top-bar{
+    background-color: #333336;
+    height: 7vh;
+    margin-top: 0px;
+
+}
+
+.main-holder{
+    background-color: #222226;
+    height: 100vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+
+}
+
+
+.side-bar{
+    margin-top: 30px;
+    vertical-align: middle;
+    height: 100vh;
+    display: inline-block;
+    width: 20%;
+    background-color: #222226;
+
+}
+.content-bar{
+    margin-top: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #333336;
+    width: 79.6%;
+    height: 100vh;
+}
+
+.side-bar-elements{
+    font-size: 18px;
+    width: 100%;
+    color: #777777;
+    background-color: #222226;
+    border: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.side-bar-elements:hover{
+    background-color: #444446;
+    cursor: pointer;
+}
+
+#logo-icon{
+    width: 350px;
+    height: 200px;
+
+
+}
