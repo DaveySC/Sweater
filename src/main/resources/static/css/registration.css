@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
+}
+
+p{
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+.header-content{
+    text-align: center;
+    background-color: white;
+
+    margin: 0 auto;
+    width: 400px;
+
+
+}
+.span-form{
+    display: block;
+}
+.input{
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 2px #D9D9D9 solid ;
+    outline: none;
+
+}
+
+.input:focus{
+    border-bottom: 2px #2196F3 solid ;
+}
+
+.span-icon{
+
+}
+.welcome-text{
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 10vh;
+}
+.octopus-image{
+    width: 100px;
+    margin-top: 15px;
+}
+
+
+.wrapper{
+    margin-top: 20px;
+}
+
+
+ul, li {
+    margin: 0;
+    list-style-type: none;
+}
+
+.wrapper-button{
+    margin-top: 40px;
+}
+
+.btn{
+    color: white;
+    background-color: #2196F3;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #1b70b6;
+}
+.btn:active{
+    background-color: #185d96;
+}
+.login-more{
+    margin-top: 25vh;
+    font-size: 18px;
+
+}
+.login-more li a{
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.login-more li a:hover{
+    color:  #1b70b6;
+}
+.login-more li a:active{
+    color:  #185d96;
+}
+
+.login-more li{
+    margin-top: 10px;
+    margin-right: 70px;
+}
+
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}

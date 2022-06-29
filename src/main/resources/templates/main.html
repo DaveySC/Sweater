@@ -1,46 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Кодировка веб-страницы -->
-    <meta charset="utf-8">
-    <title>Main Page</title>
-
-    <link rel="stylesheet" href="../static/css/main.css">
-
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/main.css" type="text/css">
 </head>
 <body>
+    <section class="header">
+        <div class="header-container">
+            <div class="logo-container header-div">
+                    <img src="../static/icons/971335-2196f3.svg" class="header-logo">
+                    <p class="header-title">OctopusNet</p>
+            </div>
+            <div class="input-container header-div">
+                <form>
+                    <input type="search" name="search" class="input-search" placeholder="Type something here...">
+                    <input type="submit" class="input-button" value="Search">
+                </form>
+            </div>
+
+            <div class="user-container header-div">
+                <p class="header-user-title">Аброгим Дегтярёв</p>
+                <img src="../static/icons/971335-2196f3.svg" class="header-logo">
+            </div>
+        </div>
+    </section>
+
+    <section class="body">
+        <div class="body-container">
+                <div class="side-bar body-div">
+                    <div class="wrapper">
+                        <a href="#" class="side-bar-button">
+                            <span>Feed</span>
+                        </a>
+                    </div>
+
+                    <div class="wrapper">
+                        <a href="#" class="side-bar-button">
+
+                            <span>Message</span>
+                        </a>
+                    </div>
+
+                    <div class="wrapper">
+                        <a href="#" class="side-bar-button">
+                            <span>Profile</span>
+                        </a>
+                    </div>
+
+                    <div class="wrapper">
+                        <a href="#" class="side-bar-button">
+                            <span>Logout</span>
+                        </a>
+                    </div>
+            </div>
+            <div class="body-content body-div">
+                <div class="post-news">
+                    <div class="post-news-input">
+                        <img src="../static/icons/971335-2196f3.svg" class="post-news-profile-pic">
+                        <input type="search" name="search" class="input-post" placeholder="What's happening?">
+                    </div>
+                    <div class="post-news-post">
+                        <input type="submit" class="post-news-button" value="Post"/>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="header-news-block">
+                        <img src="../static/icons/971335-2196f3.svg" class="post-news-profile-pic">
+                        <p class="header-title">Дудь Будь</p>
+                    </div>
+                    <div class="content-news-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore enim impedit
+                            inventore, libero nesciunt nobis nulla praesentium qui quisquam reiciendis sunt voluptatum!
+                            Architecto, ipsa ipsum iure quasi sapiente soluta?</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="people-container body-div">
+                <div class="people-input-search-wrapper ">
+                    <form>
+                        <input type="search" name="search" class="people-input-search" placeholder="Let's find some friends!">
+                        <input type="submit" class="people-input-button" value="Find">
+                    </form>
+                </div>
+                <div class="people-list">
+                    <span>Friends:</span>
+                    <div class="element-people-list">
+                        <img src="../static/icons/971335-2196f3.svg" class="post-news-profile-pic">
+                        <p class="header-title">Дудь Будь</p>
+                        <a href="#" class="element-people-list-link">Profile</a>
+                    </div>
 
 
+                </div>
+            </div>
 
-
-<div class="main-holder">
-    <div class="top-bar">
-        <p style="color:white; font-size: 24px;  text-align: center; padding-top: 20px;">Socialism(the funniest social network in the world) </p>
-    </div>
-
-    <div class="side-bar">
-        <form>
-            <button class="side-bar-elements">
-             <a th:href="@{/profile}"> Профиль</a>
-            </button>
-            <button class="side-bar-elements">
-                <a th:href="@{/message}"> Сообщения</a>
-            </button>
-            <button class="side-bar-elements">
-                <a th:href="@{/news}"> Новости</a>
-            </button>
-        </form>
-    </div>
-
-    <div class="content-bar">
-        dwasdwa
-    </div>
-
-</div>
-
-</body>
-
-
-
+        </div>
+    </section>
 </body>
 </html>

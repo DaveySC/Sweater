@@ -1,180 +1,220 @@
+* {
+    box-sizing: border-box;
+}
 body{
-    padding: 0;
     margin: 0;
-    background-color: #222226;
+    padding: 0;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
 }
 
-.top-bar{
-    background-color: #333336;
-    height: 7vh;
-    padding: 0;
+p{
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
     margin: 0;
-
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
 }
 
-.main-holder{
-    background-color: #222226;
-    margin-left: 40vh;
-    margin-right: 40vh;
+.logo-container{
 
+    padding-left: 2vh;
+}
+
+.user-container{
+
+    padding-right: 2vh;
+}
+
+.header-container{
+    width: 100%;
+    height: 100px;
+    border: 1px red solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-div{
+    display: inline-block;
+    margin: auto 0;
+}
+
+.header-title{
+    margin-left: 4px;
+    font-size: 20px;
+    display: inline-block;
+}
+.header-user-title {
+    margin-right: 4px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.header-logo{
+    vertical-align: middle;
+    width: 60px;
+}
+
+.input-search{
+    width: 450px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    padding: 0 25px;
+    border: 1px solid #bbbbbb;
+    border-radius: 25px 0 0 25px;
+}
+
+
+.input-button{
+    border-radius: 0 25px 25px 0;
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #4ba7f5;
+    color: white;
+}
+
+.input-search:active{
+    outline: none;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+}
+
+.body-div{
+    display: inline-block;
+    vertical-align: top;
+    height: 60vh;
 }
 
 .side-bar{
-    margin-top: 30px;
-    vertical-align: middle;
-    height: 87vh;
-    display: inline-block;
-    width: 20%;
-    background-color: #222226;
-
-}
-.content-bar{
-    margin-top: 30px;
-    vertical-align: middle;
-    display: inline-block;
-    background-color: #333336;
-    width: 78.6%;
-    height: 87vh;
+    width: 15%;
+    height: 60vh;
+    border: 1px solid blue;
+    justify-items: center;
+    text-align: center;
 
 }
 
-.side-bar-elements{
-    font-size: 18px;
-    width: 100%;
-    color: #777777;
-    background-color: #222226;
-    border: none;
-    text-align: left;
-    margin-top: 10px;
+.side-bar-button{
+    display: flex;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    justify-content: center;
+
 }
 
-.side-bar-elements:hover{
-    background-color: #444446;
-    cursor: pointer;
+.side-bar-button:hover{
+    background-color: #4BA7F5;
+    border-radius: 5px;
 }
 
-.chat{
+.body-content{
+    width: 15%;
+    border: 1px solid orangered;
+    background-color: #F9FAFB;
     vertical-align: top;
-    width: 69.4%;
-    height: 87vh;
-
     display: inline-block;
-}
-.contacts{
-    vertical-align: top;
-    width: 30%;
-    height: 87vh;
-    display: inline-block;
-    border-right: 1px solid black;
     overflow: auto;
+    height: 60vh;
+}
+.message-container{
+    width: 35%;
+    border: 1px solid black;
 }
 
-#info-contacts{
-    color:#777777;
-    font-size: 22px;
+.contact-p-container{
+    border:1px solid black;
+   padding: 10px;
     text-align: center;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
-}
-.contact{
-    width: 100%;
-    border-bottom: 1px solid black;
-    height: 60px;
-    padding:0;
-}
-
-.contacts::-webkit-scrollbar{
-    width: 10px;
-    background-color: #f9f9fd;
-}
-.contacts::-webkit-scrollbar-thumb {
-    background-color: #28282A;
-}
-
-.contacts::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    background-color: #f9f9fd;
-}
-
-
-.image-contact{
-    vertical-align: top;
-    display: inline-block;
-    height: 60px;
-    width: 30%;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-
-}
-
-.name-contact{
-    vertical-align: top;
-    display: inline-block;
-    width: fit-content;
-    height: 60px;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 14px;
-    color: white;
 }
 
 .image-image{
-    height: 50px;
-    width:  50px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.contact-info{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4px;
+    height: 50px;
+    outline: none;
+    text-decoration: none;
+    padding: 6px;
+}
+.contact-info:hover {
+    background-color: #4BA7F5;
+    outline: none;
+    text-decoration: none;
+}
+.contact-info:active{
+    color: white;
 }
 
-.chat{
-    width: 100px;
-
+.contact-info-p{
+    margin-left: 4px;
+    font-size: 20px;
+    display: inline-block;
 }
+
 .container{
     padding: 0;
     margin-left: -4px;
-    height: 84vh;
-    width: 64.4vh;
     display: flex;
     flex-direction: column;
-
 }
-.header{
-    height: 24.6px;
+
+.chat-header{
     border-bottom: 1px solid black;
     text-align: center;
-    padding-bottom: 3px;
+    padding: 10px;
     color: #777777;
-    font-size: 22px;
+
 }
 
+.chat{
+    height: 100%;
+}
+.chat-container{
+    height: 100%;
+}
 
-.body{
-    flex: 1;
+.chat-body{
     color: white;
-    background-color: #404044;
     padding: 20px;
     overflow: auto;
+    height: 85.4%;
 }
 
-.body::-webkit-scrollbar{
+.chat-body::-webkit-scrollbar{
     width: 10px;
     background-color: #f9f9fd;
 }
-.body::-webkit-scrollbar-thumb {
-    background-color: #28282A;
+.chat-body::-webkit-scrollbar-thumb {
+    background-color: #808080;
 }
 
-.body::-webkit-scrollbar-track {
+.chat-body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
     border-radius: 10px;
     background-color: #f9f9fd;
 }
 
 .message{
-    background-color: #1B1B1D;
+    background-color: #4BA7F5;
     padding: 10px;
     color: white;
     width: fit-content;
@@ -184,8 +224,8 @@ body{
 
 .user_message{
     margin-left: auto;
-    background-color: white;
-    color:#1B1B1D;
+    background-color: #B9043D;
+    color: white;
 }
 
 .footer form{
@@ -197,7 +237,7 @@ form input{
     height: 40px;
     border: none;
     outline: none;
-    padding-left:5px ;
+    padding-left:5px;
     font-size: 16px;
 }
 
@@ -207,8 +247,11 @@ form button{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #1B1B1D;
+    background-color: #4BA7F5;
     color: white;
     cursor: pointer;
 
+}
+.message-input{
+    border: 1px solid #4BA7F5;
 }

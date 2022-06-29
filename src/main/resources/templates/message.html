@@ -2,83 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../static/css/message.css">
+    <title>Message page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/message.css" type="text/css">
 </head>
 <body>
 
-<div class="main-holder">
-    <div class="top-bar">
-        <p style="color:white; font-size: 24px;  text-align: center; padding-top: 7px;">Socialism(the funniest social network in the world) </p>
-    </div>
-
-    <div class="side-bar">
-        <form>
-            <button class="side-bar-elements">
-                <a th:href="@{/profile}"> Профиль</a>
-            </button>
-            <button class="side-bar-elements">
-                <a th:href="@{/message}"> Сообщения</a>
-            </button>
-            <button class="side-bar-elements">
-                <a th:href="@{/news}"> Новости</a>
-            </button>
-        </form>
-    </div>
-
-    <div class="content-bar">
-        <div class="contacts">
-            <div id="info-contacts">
-                Contacts
+    <section class="header">
+        <div class="header-container">
+            <div class="logo-container header-div">
+                <img src="../static/icons/971335-2196f3.svg" class="header-logo">
+                <p class="header-title">OctopusNet</p>
+            </div>
+            <div class="input-container header-div">
+                <form>
+                    <input type="search" name="search" class="input-search" placeholder="Type something here...">
+                    <input type="submit" class="input-button" value="Search">
+                </form>
             </div>
 
-            <div class="contact">
-                <div class="image-contact">
-                    <img class="image-image" src="../static/icons/image-contact.png">
+            <div class="user-container header-div">
+                <p class="header-user-title">Аброгим Дегтярёв</p>
+                <img src="../static/icons/971335-2196f3.svg" class="header-logo">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="body">
+        <div class="body-container">
+            <div class="side-bar body-div">
+                <div class="wrapper">
+                    <a href="#" class="side-bar-button">
+                        <span>Feed</span>
+                    </a>
                 </div>
-                <div class="name-contact">
-                        MY NAME
+
+                <div class="wrapper">
+                    <a href="#" class="side-bar-button">
+                        <span>Message</span>
+                    </a>
+                </div>
+
+                <div class="wrapper">
+                    <a href="#" class="side-bar-button">
+                        <span>Profile</span>
+                    </a>
+                </div>
+
+                <div class="wrapper">
+                    <a href="#" class="side-bar-button">
+                        <span>Logout</span>
+                    </a>
                 </div>
             </div>
+            <div class="body-content body-div">
+                <div class="contact-p-container">
+                    <p>Contacts</p>
+                </div>
+
+                <div class="contact">
+                    <a href="#" class="contact-info">
+                        <img class="image-image" src="../static/icons/971335-2196f3.svg">
+                        <p class="contact-info-p">  name</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="message-container body-div">
+                <div class="chat">
+                    <div class="chat-container">
+                        <div class="chat-header">
+                            <p>Chat</p>
+                        </div>
+                        <div class="chat-body">
+                            <p class="message">Hello</p>
+                            <p class="message user_message">Hi</p>
+
+                            <p class="message">Hello</p>
+                            <p class="message user_message">Hi</p>
+
+                            <p class="message">Hello</p>
+                            <p class="message user_message">Hi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem iusto magnam nostrum odit omnis! Assumenda blanditiis deserunt dicta expedita ipsam labore laborum laudantium necessitatibus nisi numquam, officiis quas reprehenderit voluptatem.    </p>
+
+                            <p class="message">Hello</p>
+                            <p class="message user_message">Hi</p>
+
+                            <p class="message">Hello</p>
+                            <p class="message user_message">Hi</p>
+
+                        </div>
+                        <div class="footer">
+                            <form>
+                                <input type="text" size="40" class="message-input">
+                                <button>send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
 
 
 
         </div>
-
-        <div class="chat">
-            <div class="container">
-                <div class="header">
-                    Chat
-                </div>
-                <div class="body">
-                    <p class="message">Hello</p>
-                    <p class="message user_message">Hi</p>
-
-                    <p class="message">Hello</p>
-                    <p class="message user_message">Hi</p>
-
-                    <p class="message">Hello</p>
-                    <p class="message user_message">Hi</p>
-
-                    <p class="message">Hello</p>
-                    <p class="message user_message">Hi</p>
-
-                    <p class="message">Hello</p>
-                    <p class="message user_message">Hi</p>
-
-                </div>
-                <div class="footer">
-                    <form>
-                        <input type="text" size="40">
-                        <button>send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-</div>
+    </section>
 </body>
 </html>

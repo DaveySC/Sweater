@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
+}
+
+p{
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+.header{
+    padding-top: 72px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+    height: 92vh;
+
+}
+
+.nav{
+    margin-bottom: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.place{
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+
+.offer{
+    margin-top: 52px;
+    margin-bottom: 98px;
+}
+
+.offer-title{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+
+}
+
+.description{
+    margin-top: 21px;
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+
+
+.btn{
+    color: white;
+    background-color: #2196F3;
+    font-size: 18px;
+    padding: 18px 30px;
+    font-weight: 700;
+    display: block;
+    width: 197px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #1b70b6;
+}
+
+.btn:active{
+    background-color: #185d96;
+
+}
+
+.intro{
+
+    background-color: #EAEAEA;
+    padding:30px;
+    width: 441px;
+}
+
+.intro-title{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.right-img{
+    width: 400px;
+}
